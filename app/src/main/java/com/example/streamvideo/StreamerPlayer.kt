@@ -87,7 +87,7 @@ fun StreamerPlayer(
                     modifier = Modifier.align(Alignment.Center)
                 ) {
                     Icon(
-                        imageVector = if (exoPlayerPlaying) Icons.Default.Close else Icons.Default.PlayArrow,
+                        painter = painterResource(id = if (exoPlayerPlaying) R.drawable.ic_player_pause else R.drawable.ic_player_play),
                         contentDescription = if (exoPlayerPlaying) "Pause" else "Play",
                         tint = Color.White
                     )
